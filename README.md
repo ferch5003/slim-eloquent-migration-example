@@ -22,13 +22,13 @@ Now go to the database/migrations directory and see that a new file is created t
 
 public function up()
 {
-    $this->schema->create('users', function (Illuminate\Database\Schema\Blueprint $table) {
+$this->schema->create('users', function (Illuminate\Database\Schema\Blueprint $table) {
 
-    });
+});
 }
 public function down()
 {
-    $this->schema->drop('users');
+$this->schema->drop('users');
 }
 
 Inside the up and down functions use the normal Laravel migrations methods.
