@@ -1,0 +1,14 @@
+{
+    "require": {
+        "slim/slim": "^3.12",
+        "robmorgan/phinx": "0.5.*",
+        "illuminate/database": "^5.7"
+    },
+    "autoload": {
+      "psr-4": {
+        "Migrations\\": "database/",
+        "Models\\": "Model/",
+        "Controllers\\": "Controller/"
+      }
+    }
+}
