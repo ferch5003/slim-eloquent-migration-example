@@ -2,8 +2,6 @@
 
 namespace Migrations;
 
-require __DIR__ . '/../config.php';
-
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Phinx\Migration\AbstractMigration;
 
