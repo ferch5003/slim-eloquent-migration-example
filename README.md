@@ -20,16 +20,20 @@ First put you database settings in the config.php in the root directory and afte
 
 Now go to the database/migrations directory and see that a new file is created that contains create_users_table.php, enter in this file and delete the change function and inside of the CreateUsersTable copy and paste the following code:
 
-public function up()
-{
-$this->schema->create('users', function (Illuminate\Database\Schema\Blueprint $table) {
 
-});
-}
-public function down()
-{
-$this->schema->drop('users');
-}
+    public function up()
+    {
+        $this->schema->create('users', function (Illuminate\Database\Schema\Blueprint $table) 
+        {   
+        });
+    }
+    
+    public function down()
+    {
+        $this->schema->drop('users');
+    }
+
+
 
 Inside the up and down functions use the normal Laravel migrations methods.
 
