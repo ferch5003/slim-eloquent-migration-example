@@ -1,2 +1,2 @@
 <?php
-$app->get('/create', \Controllers\WidgetController::class);
+$app->get('/create', \Controllers\UserController::class);

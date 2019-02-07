@@ -1,12 +1,12 @@
 <?php
 namespace Controllers;
 
-use Models\Widget;
+use Models\User;
 use Illuminate\Database\Query\Builder;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
-class WidgetController
+class UserController
 {
     protected $table;
 
@@ -18,10 +18,7 @@ class WidgetController
 
     public function __invoke(Request $request, Response $response, $args)
     {
-        $widget = new Widget();
-        $widget->serial_number = 123;
-        $widget->name = 'My Test Widget';
-        $widget->save();
+        User::create($request->getParsedBody());
         echo 'Created!';
     }
 }
