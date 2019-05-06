@@ -2,7 +2,7 @@
 
 use \Migrations\Migration;
 
-class MyFirstMigration extends Migration
+class CreateUsersTable extends Migration
 {
     public function up()
     {

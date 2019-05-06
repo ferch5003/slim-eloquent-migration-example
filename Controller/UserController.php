@@ -18,7 +18,11 @@ class UserController
 
     public function __invoke(Request $request, Response $response, $args)
     {
-        User::create($request->getParsedBody());
+        $user = $request->getParsedBody();
+        $user["password"] = password_hash($user["password"],PASSWORD_BCRYPT,array(
+            "cost" => 12
+        ));
+        User::create($user);
         echo 'Created!';
     }
 }

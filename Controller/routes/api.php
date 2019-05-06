@@ -1,2 +1,2 @@
 <?php
-$app->get('/create', \Controllers\UserController::class);
+$app->post('/create', \Controllers\UserController::class);

@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
     MySQL: specify the mysql adapter.
     PostgreSQL: specify the pgsql adapter.
     SQLite: specify the sqlite adapter.

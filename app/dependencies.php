@@ -9,7 +9,7 @@ $container['db'] = function ($container) {
 
     return $capsule;
 };
-$container[\Controllers\WidgetController::class] = function ($c) {
-    $table = $c->get('db')->table('widgets');
-    return new \Controllers\WidgetController($table);
+$container[\Controllers\UserController::class] = function ($c) {
+    $table = $c->get('db')->table('users');
+    return new \Controllers\UserController($table);
 };
